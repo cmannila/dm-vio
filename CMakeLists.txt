@@ -30,8 +30,8 @@ ENDIF()
 
 # optional libraries
 find_package(LibZip QUIET)
-find_package(Pangolin 0.2 QUIET)
-find_package(OpenCV QUIET)
+find_package(Pangolin REQUIRED)
+find_package(OpenCV REQUIRED)
 
 
 IF(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
