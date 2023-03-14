@@ -1,2 +1,6 @@
 # Result files 
 results/
+
+# other 
+build/
+cmake-build-relwithdebinfo/
