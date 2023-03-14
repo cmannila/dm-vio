@@ -1,0 +1,162 @@
+diff --git a/configs.yaml b/configs.yaml
+index 87fa7f2..ffed7c6 100644
+--- a/configs.yaml
++++ b/configs.yaml
+@@ -1,3 +1,22 @@
++workpc:
++  short_name: workpc
++  dmvio_folder: /home/cm2113/workspace/dm-vio
++  pc_config_path:
++  pc_config_command: apt list
++  slurm: false
++  results_path: /home/cm2113/workspace/dm-vio/results
++  euroc:
++    dataset_path: /home/cm2113/workspace/Datasets/euroc
++    results_path: /home/cm2113/workspace/dm-vio/results
++  euroc_blur:
++    dataset_path: /home/cm2113/workspace/Datasets/euroc
++    results_path: /home/cm2113/workspace/dm-vio/results
++  tumvi:
++    dataset_path: /home/cm2113/workspace/Datasets/tumvi
++    results_path: /home/cm2113/workspace/dm-vio/results
++  tumvi_blur:
++    dataset_path: /home/cm2113/workspace/Datasets/tumvi
++    results_path: /home/cm2113/workspace/dm-vio/results
+ example_config:
+   short_name: example
+   dmvio_folder: /path/to/dmvio
+@@ -11,8 +30,8 @@ example_config:
+   slurm: false # Can be set to true for running on Slurm servers.
+   results_path: /path/where/results/are/stored # Your results will be stored (and read from) here.
+   euroc: # Paths to the individual datasets.
+-    dataset_path: /path/to/euroc/dataset
+-    results_path: /path/where/results/are/stored
++    dataset_path: /home/cm2113/workspace/Datasets/euroc
++    results_path: /home/cm2113/workspace/dm-vio/results
+   tumvi:
+     dataset_path: /path/to/tumvi/dataset
+     results_path: /path/where/results/are/stored
+@@ -37,6 +56,19 @@ config_general: # This is where configuration shared for all machines is stored
+     # improves the robustness of the method to bad visual initialization.
+     start_times: [950, 800, 410, 445, 460, 22, 115, 250, 26, 100, 115]
+     end_times: [3600, 3000, 2600, 1925, 2200, 2800, 1600, 2020, 2130, 2230, 1880]
++  euroc_blur: # With start times as used by DSO and VI-DSO.
++    afterpath: mav0/cam0/
++    afterpath2: mav0/cam1/
++    res_prefix: mav_
++    dataset_args: files=./blurred_data calib=./camera.txt mode=1
++    default_iter: 10
++    folder_names: [MH_03_medium_blur_1-1-1-1-1-1-1-1, MH_03_medium_blur_1-1-1-1] #, MH_02_easy, MH_03_medium, MH_04_difficult, MH_05_difficult, V1_01_easy, V1_02_medium, V1_03_difficult, V2_01_easy, V2_02_medium, V2_03_difficult
++    # We use the start times proposed in the DSO paper, which were also taken over in VI-DSO.
++    # When starting from the beginning, the method works also well, but then the setting
++    # --dmvio_args="init_ba_skipFirstKFs=1 init_requestFullResetNormalizedErrorThreshold=0.8" should be used, which
++    # improves the robustness of the method to bad visual initialization.
++    start_times: [410, 410] # , 800, 410, 445, 460, 22, 115, 250, 26, 100, 115 
++    end_times: [2600, 2600] # , 3000, 2600, 1925, 2200, 2800, 1600, 2020, 2130, 2230, 1880
+   tumvi:
+     afterpath: dso/cam0/
+     afterpath2: dso/cam1/
+@@ -59,6 +91,19 @@ config_general: # This is where configuration shared for all machines is stored
+     # (eliminates one possible source of error) and should not really make a difference.
+     start_times: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+       2, 2, 2, 2, 2, 2]
++  tumvi_blur:
++    afterpath: dso/cam0/
++    afterpath2: dso/cam1/
++    res_prefix: tumvi_
++    dataset_args: files=./blurred_data calib=${DMVIO_PATH}/configs/tumvi_calib/camera02.txt
++      gamma=${DMVIO_PATH}/configs/tumvi_calib/pcalib.txt vignette=vignette.png imuFile=../imu.txt
++      gtFile=../gt_imu.csv imuCalib=${DMVIO_PATH}/configs/tumvi_calib/camchain.yaml
++      mode=0 use16Bit=1
++    default_iter: 5
++    folder_names: [dataset-room1_512_16_blur_1-1-1, dataset-room1_512_16_blur_1-1-1-1-1, dataset-room1_512_16_blur_1-1-1-1-1-1-1, dataset-room1_512_16_blur_1-1-1-1-1-1-1-1-1]
++    # We always skip the first two frames in case the IMU data starts later than the images. This is just for convenience
++    # (eliminates one possible source of error) and should not really make a difference.
++    start_times: [2, 2, 2, 2]
+   4seasons:
+     afterpath: undistorted_images
+     afterpath2: ''
+diff --git a/run_dmvio.py b/run_dmvio.py
+index 856bc38..e758506 100644
+--- a/run_dmvio.py
++++ b/run_dmvio.py
+@@ -1,4 +1,7 @@
+ import argparse
++import glob
++import os
++import shutil
+ import sys
+ import subprocess
+ from pathlib import Path
+@@ -69,6 +72,8 @@ def main():
+     parser.add_argument('--num_nodes', type=str, default=None, help='Num nodes to report to slurm.')
+     parser.add_argument('--gdb', default=False, action='store_true',
+                         help='Debug with gdb and stop as soon as error happens.')
++    parser.add_argument('--result', default=False, type=bool, help='Save the estimated trajectory in specific result folder')
++    parser.add_argument('--run', type=int, default=0, help='if multiple run, this is the sequence index. Defualt is 0')
+     args = parser.parse_args()
+ 
+     # Read config.
+@@ -81,6 +86,7 @@ def main():
+     noimu = args.noimu
+     dataset = args.dataset
+ 
++    
+     name = args.name
+     results_name, time_used_for_name = build_results_name(name, realtime, dataset)
+     temporary = args.temporary
+@@ -181,6 +187,7 @@ def main():
+     # ------------------------------ Run-Loop -> Run / create Slurm script. ------------------------------
+     print("----------- STARTING EXECUTION! -----------")
+     if not use_slurm:
++        print('not use slurm')
+         execute_commands(commands, args.dryrun, setup_folder)
+ 
+         # Transfer results to Uni (if not there already).
+@@ -191,10 +198,19 @@ def main():
+             print(full_rsync_command)
+             subprocess.run(full_rsync_command, shell=True)
+     else:
++        print('use slurm')
+         execute_commands_slurm(commands, setup_folder, dataset_config['slurm_mem'], dataset_config['slurm_time'],
+                                args.mail_type, args.num_tasks, args.num_nodes)
+-
+-
++        
++    # ------------------------------ SAVE FILES IN SPECIFIC FOLDER -------------------------------------------
++    if args.result:
++        file_path = os.path.join(f'{results_folder}/results/')
++        folders = dataset_config['folder_names']
++        copy_path = os.path.join(f'/home/cm2113/workspace/results/run_{args.run}/{folders[int(only_seq)]}/dm_vio/results/')
++        for file in glob.glob(os.path.join(file_path, '*.txt')):
++            shutil.copy(file, copy_path)
++
++        
+ def execute_commands(commands, dryrun, setup_folder):
+     for command in commands:
+         print('Working Dir: {}'.format(command.working_dir))
+@@ -335,4 +351,4 @@ def build_results_name(name, realtime, dataset):
+ 
+ 
+ if __name__ == "__main__":
+-    main()
++    main()
+\ No newline at end of file
+diff --git a/trajectory_evaluation/evaluate.py b/trajectory_evaluation/evaluate.py
+index f5b8782..3c9c4d5 100644
+--- a/trajectory_evaluation/evaluate.py
++++ b/trajectory_evaluation/evaluate.py
+@@ -114,11 +114,10 @@ def evaluate_with_config(pair, always_reevaluate=False):
+     return evaluate_run(folder, dataset, setup['num_iter'], None, always_reevaluate)
+ 
+ 
+-def evaluate_run(run_folder: Path, dataset: Dataset, num_iter: int, name=None, always_reevaluate=False) -> (
+-        EvalResults, EvalResults):
++def evaluate_run(run_folder: Path, dataset: Dataset, num_iter: int, name=None, always_reevaluate=False) -> (EvalResults, EvalResults):
+     """Evaluate all sequences and iterations of a run and save it to file (and return it).
+     If the evaluation result has already been saved to file it will just load it.
+-        returns
++        retu
+ 
+     :param run_folder: Folder of the run which will be evaluated.
+     :param dataset: Dataset to evaluate on.

@@ -1,0 +1,592 @@
+PHOTOMETRIC MODE WITH CALIBRATION!
+
+=============== PRESET Settings: ===============
+DEFAULT settings:
+- no  real-time enforcing
+- 2000 active points
+- 5-7 active frames
+- 1-6 LM iteration each KF
+- original image resolution
+==============================================
+NO GUI!
+Enabling IMU integration!
+QUIET MODE, I'll shut up!
+Loading settings from yaml file: /home/cm2113/workspace/dm-vio/configs/tumvi.yaml!
+Loading IMU parameter file at: /home/cm2113/workspace/dm-vio/configs/tumvi_calib/camchain.yaml
+Used T_cam_imu: 
+  -0.999525   0.0296153 -0.00852233   0.0472799
+ 0.00750192  -0.0343974    -0.99938  -0.0474432
+ -0.0298901   -0.998969   0.0341589     -0.0682
+          0           0           0           1
+Used noise values: 0.043 0.0011 0.224 0.0128
+Settings:
+accelerometer_noise_density: 0.224
+accelerometer_random_walk: 0.043
+addVisualToCoarseGraphIfTrackingBad: 0
+alwaysCanBreakIMU: 0
+baToCoarseAccBiasVariance: 1000
+baToCoarseGyrBiasVariance: 0.05
+baToCoarsePoseVariance: 0.1
+baToCoarseRotVariance: 1
+baToCoarseVelVariance: 0.1
+calib: /home/cm2113/workspace/dm-vio/configs/tumvi_calib/camera02.txt
+dynamicWeightRMSEThresh: 8
+end: 100000
+files: ./blurred_data
+fixKeyframeDuringCoarseTracking: 1
+gamma: /home/cm2113/workspace/dm-vio/configs/tumvi_calib/pcalib.txt
+generalScaleIntervalSize: 60
+gravityDirectionFixZ: 1
+gtFile: ../gt_imu.csv
+gyroscope_noise_density: 0.0128
+gyroscope_random_walk: 0.0011
+imuCalib: /home/cm2113/workspace/dm-vio/configs/tumvi_calib/camchain.yaml
+imuFile: ../imu.txt
+init_coarseScaleUncertaintyThresh: 1
+init_conversionType: 0
+init_disableVIOUntilFirstInit: 1
+init_fixPoses: 1
+init_initDSOParams: 1
+init_lambdaLowerBound: 1e-16
+init_maxNumPoses: 100
+init_multipleBiases: 0
+init_multithreadedInitDespiteNonRT: 0
+init_onlyKFs: 1
+init_pgba_conversionType: 0
+init_pgba_delay: 100
+init_pgba_prepareGraphAddDelValues: 0
+init_pgba_prepareGraphAddFactors: 0
+init_pgba_priorExtrinsicsRot: 0.01
+init_pgba_priorExtrinsicsTrans: 0.1
+init_pgba_priorGravityDirection: 0.4
+init_pgba_priorGravityDirectionZ: 0.0001
+init_pgba_reinitScaleUncertaintyThresh: 0.5
+init_pgba_scaleUncertaintyThresh: 1
+init_pgba_skipFirstKFs: 0
+init_priorExtrinsicsRot: 0.01
+init_priorExtrinsicsTrans: 0.1
+init_priorGravityDirection: 0.4
+init_priorGravityDirectionZ: 0.0001
+init_priorRotSigma: 1e-05
+init_priorTransSigma: 1e-05
+init_requestFullResetErrorThreshold: -1
+init_requestFullResetNormalizedErrorThreshold: -1
+init_scalePriorAfterInit: 0
+init_secondthreshGravdir: 1000
+init_secondthreshScale: 1e+07
+init_threshGravdir: 1000
+init_threshScale: 1.02
+init_transitionModel: 2
+init_updatePoses: 1
+integration_sigma: 0.316227
+maxFrameEnergyThreshold: 5000
+maxPreloadImages: 0
+maxTimeBetweenInitFrames: 100000
+numMeasurementsGravityInit: 40
+preload: 0
+priorExtrinsicsRot: 0.01
+priorExtrinsicsTrans: 0.1
+priorGravityDirection: 0.4
+priorGravityDirectionZ: 0.0001
+resultsPrefix: /home/cm2113/workspace/dm-vio/results/dmvioresult-tumvi_blur-2023-02-23--10-47-31/tumvi_dataset-room1_512_16_blur_10-10-10_0/
+reverse: 0
+sampleoutput: 0
+setting_forceNoKFTranslationThresh: 0
+setting_maxOptIterations: 6
+setting_minFramesBetweenKeyframes: -0.5
+setting_minIdepth: 0.02
+setting_minOptIterations: 1
+setting_optGravity: 1
+setting_optIMUExtrinsics: 0
+setting_optScaleBA: 1
+setting_prior_bias: 0
+setting_prior_velocity: 0
+setting_scaleFixTH: 0
+setting_solverMode: 2048
+setting_transferCovToCoarse: 1
+setting_visualOnlyAfterScaleFixing: 0
+setting_weightDSOCoarse: 0.001
+setting_weightDSOToGTSAM: 1.66667e-05
+setting_weightZeroPriorDSOInitX: 0
+setting_weightZeroPriorDSOInitY: 0
+skipFirstKeyframe: 0
+speed: 0
+start: 2
+transferCovToCoarseMultiplier: 1
+updateDynamicWeightDuringOptimization: 1
+use16Bit: 1
+useScaleDiagonalHack: 0
+vignette: vignette.png
+Reading Calibration from file /home/cm2113/workspace/dm-vio/configs/tumvi_calib/camera02.txt ... found!
+Creating Equidistant undistorter
+Input resolution: 512 512
+In: EquiDistant 190.978477 190.973307 254.931706 256.897443 0.003482 0.000715 -0.002053 0.000203
+Out: 0.200000 0.200000 0.499000 0.499000 0.000000
+Output resolution: 512 512
+
+Rectified Kamera Matrix:
+  102.4       0 254.988
+      0   102.4 254.988
+      0       0       1
+
+Reading Photometric Calibration from file /home/cm2113/workspace/dm-vio/configs/tumvi_calib/pcalib.txt
+Reading Vignette Image from vignette.png
+Successfully read photometric calibration!
+got 2821 images and 2821 timestamps and 2821 exposures.!
+ImageFolderReader: got 2821 files in ./blurred_data!
+Skipping comment line in IMU data.
+IMU Id: 1520530308181901469
+using pyramid levels 0 to 3. coarsest resolution: 64 x 64!
+Using setting_minFramesBetweenKeyframes=0.5 because of non-realtime mode.
+Switching to initializer state: CoarseIMUInit
+PixelSelector: Using block sizes: 16, 16
+Loading gt data
+GTData distance (seconds): 0.00143828
+PixelSelector: Using block sizes: 16, 16
+GTData distance (seconds): 0.00149017
+InitTimeBetweenFrames: 0.0500519
+GTData distance (seconds): 0.00149217
+InitTimeBetweenFrames: 0.100054
+GTData distance (seconds): 0.00149217
+InitTimeBetweenFrames: 0.150054
+GTData distance (seconds): 0.00149417
+InitTimeBetweenFrames: 0.200056
+GTData distance (seconds): 0.00149517
+InitTimeBetweenFrames: 0.250057
+GTData distance (seconds): 0.00149717
+InitTimeBetweenFrames: 0.300059
+GTData distance (seconds): 0.00154317
+InitTimeBetweenFrames: 0.350105
+GTData distance (seconds): 0.00150017
+InitTimeBetweenFrames: 0.400062
+GTData distance (seconds): 0.00154659
+InitTimeBetweenFrames: 0.450108
+GTData distance (seconds): 0.00154759
+InitTimeBetweenFrames: 0.500109
+GTData distance (seconds): 0.00154959
+InitTimeBetweenFrames: 0.550111
+GTData distance (seconds): 0.00155059
+InitTimeBetweenFrames: 0.600112
+GTData distance (seconds): 0.00155259
+InitTimeBetweenFrames: 0.650114
+GTData distance (seconds): 0.00155459
+InitTimeBetweenFrames: 0.700116
+GTData distance (seconds): 0.00155559
+InitTimeBetweenFrames: 0.750117
+GTData distance (seconds): 0.00155759
+InitTimeBetweenFrames: 0.800119
+GTData distance (seconds): 0.00155494
+InitTimeBetweenFrames: 0.850117
+GTData distance (seconds): 0.00157014
+InitTimeBetweenFrames: 0.900132
+GTData distance (seconds): 0.00157114
+InitTimeBetweenFrames: 0.950133
+GTData distance (seconds): 0.00157314
+InitTimeBetweenFrames: 1.00013
+GTData distance (seconds): 0.00157414
+InitTimeBetweenFrames: 1.05014
+GTData distance (seconds): 0.00157613
+InitTimeBetweenFrames: 1.10014
+GTData distance (seconds): 0.00157814
+InitTimeBetweenFrames: 1.15014
+GTData distance (seconds): 0.00157914
+InitTimeBetweenFrames: 1.20014
+GTData distance (seconds): 0.00158114
+InitTimeBetweenFrames: 1.25014
+GTData distance (seconds): 0.00158454
+InitTimeBetweenFrames: 1.30015
+GTData distance (seconds): 0.00158654
+InitTimeBetweenFrames: 1.35015
+GTData distance (seconds): 0.00158754
+InitTimeBetweenFrames: 1.40015
+GTData distance (seconds): 0.00158954
+InitTimeBetweenFrames: 1.45015
+GTData distance (seconds): 0.00159054
+InitTimeBetweenFrames: 1.50015
+GTData distance (seconds): 0.00159254
+InitTimeBetweenFrames: 1.55015
+GTData distance (seconds): 0.00159354
+InitTimeBetweenFrames: 1.60016
+GTData distance (seconds): 0.00159554
+InitTimeBetweenFrames: 1.65016
+GTData distance (seconds): 0.00160966
+InitTimeBetweenFrames: 1.70017
+GTData distance (seconds): 0.00161066
+Scaling with rescaleFactor: 1.10637
+INITIALIZE FROM INITIALIZER (1031 pts)!
+GTData distance (seconds): 0.00161266
+GTData distance (seconds): 0.00161466
+GTData distance (seconds): 0.00161566
+GTData distance (seconds): 0.00171666
+GTData distance (seconds): 0.00161866
+GTData distance (seconds): 0.00162066
+GTData distance (seconds): 0.00161233
+GTData distance (seconds): 0.00161433
+GTData distance (seconds): 0.00161533
+GTData distance (seconds): 0.00161733
+GTData distance (seconds): 0.00161933
+GTData distance (seconds): 0.00162033
+GTData distance (seconds): 0.00162233
+GTData distance (seconds): 0.00162333
+GTData distance (seconds): 0.00163859
+GTData distance (seconds): 0.00163959
+GTData distance (seconds): 0.00164159
+GTData distance (seconds): 0.00164259
+GTData distance (seconds): 0.00164459
+GTData distance (seconds): 0.00164659
+GTData distance (seconds): 0.00164759
+GTData distance (seconds): 0.00164959
+GTData distance (seconds): 0.00165952
+GTData distance (seconds): 0.00166052
+GTData distance (seconds): 0.00166252
+GTData distance (seconds): 0.00166452
+GTData distance (seconds): 0.00166552
+GTData distance (seconds): 0.00166652
+GTData distance (seconds): 0.00167152
+GTData distance (seconds): 0.00167052
+GTData distance (seconds): 0.00167152
+GTData distance (seconds): 0.00170678
+GTData distance (seconds): 0.00170778
+GTData distance (seconds): 0.00170978
+GTData distance (seconds): 0.00171078
+GTData distance (seconds): 0.00171278
+GTData distance (seconds): 0.00171378
+GTData distance (seconds): 0.00171578
+GTData distance (seconds): 0.00171678
+GTData distance (seconds): 0.00170812
+GTData distance (seconds): 0.00170912
+GTData distance (seconds): 0.00171112
+GTData distance (seconds): 0.00171312
+GTData distance (seconds): 0.00171412
+GTData distance (seconds): 0.00171612
+GTData distance (seconds): 0.00171712
+GTData distance (seconds): 0.00171912
+GTData distance (seconds): 0.00169977
+GTData distance (seconds): 0.00170177
+GTData distance (seconds): 0.00170277
+GTData distance (seconds): 0.00170477
+GTData distance (seconds): 0.00170677
+GTData distance (seconds): 0.00170777
+GTData distance (seconds): 0.00170977
+GTData distance (seconds): 0.00171177
+GTData distance (seconds): 0.00170708
+GTData distance (seconds): 0.00170908
+GTData distance (seconds): 0.00171108
+GTData distance (seconds): 0.00171208
+GTData distance (seconds): 0.00171308
+GTData distance (seconds): 0.00171508
+GTData distance (seconds): 0.00171608
+GTData distance (seconds): 0.00171808
+GTData distance (seconds): 0.00172336
+GTData distance (seconds): 0.00172536
+GTData distance (seconds): 0.00172636
+GTData distance (seconds): 0.00177736
+GTData distance (seconds): 0.00173036
+GTData distance (seconds): 0.00173136
+GTData distance (seconds): 0.00173336
+GTData distance (seconds): 0.00173436
+GTData distance (seconds): 0.00173264
+GTData distance (seconds): 0.00173364
+GTData distance (seconds): 0.00173564
+GTData distance (seconds): 0.00173764
+GTData distance (seconds): 0.00173864
+GTData distance (seconds): 0.00174064
+GTData distance (seconds): 0.00174164
+GTData distance (seconds): 0.00174364
+GTData distance (seconds): 0.00174464
+GTData distance (seconds): 0.00175036
+GTData distance (seconds): 0.00175236
+GTData distance (seconds): 0.00175336
+GTData distance (seconds): 0.00175536
+GTData distance (seconds): 0.00175636
+GTData distance (seconds): 0.00175836
+GTData distance (seconds): 0.00176036
+GTData distance (seconds): 0.00176136
+GTData distance (seconds): 0.00176196
+GTData distance (seconds): 0.00176396
+GTData distance (seconds): 0.00176496
+GTData distance (seconds): 0.00176696
+GTData distance (seconds): 0.00176796
+GTData distance (seconds): 0.00176996
+GTData distance (seconds): 0.00177496
+GTData distance (seconds): 0.00177196
+CoarseIMUInit normalized error: 0.752792 variance: 1.47412 scale: 1.20786
+GTData distance (seconds): 0.00179803
+GTData distance (seconds): 0.00180003
+GTData distance (seconds): 0.00190703
+CoarseIMUInit normalized error: 0.762413 variance: 1.10253 scale: 1.272
+GTData distance (seconds): 0.00180303
+GTData distance (seconds): 0.00180403
+GTData distance (seconds): 0.00180603
+GTData distance (seconds): 0.00180703
+GTData distance (seconds): 0.00180903
+CoarseIMUInit normalized error: 3.01525 variance: 1.05914 scale: 1.20618
+GTData distance (seconds): 0.00162273
+GTData distance (seconds): 0.00162473
+GTData distance (seconds): 0.00162673
+RE-TRACK ATTEMPT 1 with initOption 1 and start-lvl 3 (ab -0.117277 6.176114): 6.026061 5.432097 5.183031 5.213226 nan -> 6.024407 5.432199 5.186383 5.365223 nan 
+RE-TRACK ATTEMPT 2 with initOption 2 and start-lvl 3 (ab -0.116787 6.169601): 6.024407 5.432097 5.183031 5.213226 nan -> 6.026384 5.432398 5.184146 5.206771 nan 
+RE-TRACK ATTEMPT 3 with initOption 3 and start-lvl 3 (ab -0.116769 6.169283): 6.024407 5.432097 5.183031 5.206771 nan -> 6.026069 5.432159 5.183115 5.218413 nan 
+RE-TRACK ATTEMPT 4 with initOption 4 and start-lvl 3 (ab -0.117287 6.176297): 6.024407 5.432097 5.183031 5.206771 nan -> 6.024352 5.432272 5.182733 5.135057 nan 
+RE-TRACK ATTEMPT 5 with initOption 5 and start-lvl 3 (ab -0.103973 6.075840): 6.024352 5.432097 5.182733 5.135057 nan -> 5.710122 5.194904 5.110360 5.507016 nan 
+RE-TRACK ATTEMPT 6 with initOption 6 and start-lvl 3 (ab -0.116759 6.169132): 5.710122 5.194904 5.110360 5.135057 nan -> 6.026068 5.432222 5.181962 5.134831 nan 
+RE-TRACK ATTEMPT 7 with initOption 7 and start-lvl 3 (ab -0.117486 6.185929): 5.710122 5.194904 5.110360 5.134831 nan -> 6.024910 5.432052 5.191550 5.087601 nan 
+RE-TRACK ATTEMPT 8 with initOption 8 and start-lvl 3 (ab -0.117755 6.203387): 5.710122 5.194904 5.110360 5.087601 nan -> 6.029558 5.434881 5.185079 5.120723 nan 
+RE-TRACK ATTEMPT 9 with initOption 9 and start-lvl 3 (ab -0.117159 6.176033): 5.710122 5.194904 5.110360 5.087601 nan -> 6.024409 5.432296 5.180698 5.101184 nan 
+RE-TRACK ATTEMPT 10 with initOption 10 and start-lvl 3 (ab -0.117338 6.178057): 5.710122 5.194904 5.110360 5.087601 nan -> 6.024129 5.432018 5.182595 5.118129 nan 
+RE-TRACK ATTEMPT 11 with initOption 11 and start-lvl 3 (ab -0.105204 6.122029): 5.710122 5.194904 5.110360 5.087601 nan -> 5.719686 5.194930 5.110613 5.503538 nan 
+RE-TRACK ATTEMPT 12 with initOption 12 and start-lvl 3 (ab -0.117486 6.185929): 5.710122 5.194904 5.110360 5.087601 nan -> 6.024913 5.432052 5.191549 5.086454 nan 
+RE-TRACK ATTEMPT 13 with initOption 13 and start-lvl 3 (ab -0.100714 5.914829): 5.710122 5.194904 5.110360 5.086454 nan -> 5.677062 5.181806 4.942617 5.223479 nan 
+RE-TRACK ATTEMPT 14 with initOption 14 and start-lvl 3 (ab -0.117291 6.176740): 5.677062 5.181806 4.942617 5.086454 nan -> 6.024046 5.432233 5.183034 5.234178 nan 
+RE-TRACK ATTEMPT 15 with initOption 15 and start-lvl 3 (ab -0.117486 6.185923): 5.677062 5.181806 4.942617 5.086454 nan -> 6.024910 5.432049 5.191554 5.086575 nan 
+RE-TRACK ATTEMPT 16 with initOption 16 and start-lvl 3 (ab -0.117755 6.203400): 5.677062 5.181806 4.942617 5.086454 nan -> 6.029556 5.434881 5.185078 5.128478 nan 
+RE-TRACK ATTEMPT 17 with initOption 17 and start-lvl 3 (ab -0.092880 5.800023): 5.677062 5.181806 4.942617 5.086454 nan -> 5.854528 5.369665 5.378275 5.579497 nan 
+RE-TRACK ATTEMPT 18 with initOption 18 and start-lvl 3 (ab -0.117756 6.203417): 5.677062 5.181806 4.942617 5.086454 nan -> 6.029558 5.434882 5.185069 5.123895 nan 
+RE-TRACK ATTEMPT 19 with initOption 19 and start-lvl 3 (ab -0.092872 5.799805): 5.677062 5.181806 4.942617 5.086454 nan -> 5.854706 5.369637 5.377852 5.598849 nan 
+RE-TRACK ATTEMPT 20 with initOption 20 and start-lvl 3 (ab -0.116603 6.165339): 5.677062 5.181806 4.942617 5.086454 nan -> 6.025664 5.432324 5.182395 5.120305 nan 
+RE-TRACK ATTEMPT 21 with initOption 21 and start-lvl 3 (ab -0.092879 5.799793): 5.677062 5.181806 4.942617 5.086454 nan -> 5.854793 5.374286 5.379475 5.555069 nan 
+RE-TRACK ATTEMPT 22 with initOption 22 and start-lvl 3 (ab -0.117214 6.174356): 5.677062 5.181806 4.942617 5.086454 nan -> 6.024199 5.432386 5.183568 5.210083 nan 
+RE-TRACK ATTEMPT 23 with initOption 23 and start-lvl 3 (ab -0.117754 6.203380): 5.677062 5.181806 4.942617 5.086454 nan -> 6.029566 5.434876 5.185060 5.120709 nan 
+RE-TRACK ATTEMPT 24 with initOption 24 and start-lvl 3 (ab -0.117755 6.203393): 5.677062 5.181806 4.942617 5.086454 nan -> 6.029560 5.434877 5.185021 5.126648 nan 
+RE-TRACK ATTEMPT 25 with initOption 25 and start-lvl 3 (ab -0.116436 6.161125): 5.677062 5.181806 4.942617 5.086454 nan -> 6.025958 5.432648 5.183263 5.334278 nan 
+RE-TRACK ATTEMPT 26 with initOption 26 and start-lvl 3 (ab -0.117488 6.185860): 5.677062 5.181806 4.942617 5.086454 nan -> 6.024916 5.432218 5.191023 5.085979 nan 
+RE-TRACK ATTEMPT 27 with initOption 27 and start-lvl 3 (ab -0.092872 5.799799): 5.677062 5.181806 4.942617 5.085979 nan -> 5.854705 5.369681 5.377923 5.595953 nan 
+RE-TRACK ATTEMPT 28 with initOption 28 and start-lvl 3 (ab -0.100714 5.914850): 5.677062 5.181806 4.942617 5.085979 nan -> 5.677062 5.181801 4.942641 5.214743 nan 
+RE-TRACK ATTEMPT 29 with initOption 29 and start-lvl 3 (ab -0.104823 6.107799): 5.677062 5.181801 4.942617 5.085979 nan -> 5.719706 5.195853 5.115727 5.463158 nan 
+RE-TRACK ATTEMPT 30 with initOption 30 and start-lvl 3 (ab -0.100713 5.914815): 5.677062 5.181801 4.942617 5.085979 nan -> 5.677060 5.181810 4.942625 5.223900 nan 
+GTData distance (seconds): 0.00162773
+CoarseIMUInit normalized error: 2.84131 variance: 0.556644 scale: 1.32632
+Switching to initializer state: PGBAState
+Updating transform with index 0 to val: 1.32632
+PGBA: Built graph with 9 IMU factors and 10 poses.
+PGBA Error: 36.6247
+PGBA: 1.3231 var: 0.50187     7.90352     8.05219   0.0810987 2.80488e-05 2.84907e-05 2.78029e-05
+Switching to initializer state: InitializedFromPGBAState
+INITIALIZED IMU Integration. Using IMU data in main optimization from now on!
+Switching to initializer state: PGBAState
+GTData distance (seconds): 0.00162973
+GTData distance (seconds): 0.00163073
+Updating transform with index 0 to val: 1.36615
+PGBA: Built graph with 10 IMU factors and 11 poses.
+PGBA Error: 34.1279
+PGBA: 1.34385 var: 0.344817     6.97362     7.33116    0.116672 2.82146e-05 2.79129e-05 2.77502e-05
+Switching to initializer state: InitializedFromPGBAState
+REINIT IMU Integration.
+Switching to initializer state: PotentialMarginalizationReplacementState
+GTData distance (seconds): 0.00163273
+GTData distance (seconds): 0.00163373
+Updating transform with index 0 to val: 1.26628
+PGBA: Built graph with 11 IMU factors and 12 poses.
+Switching to initializer state: MarginalizationReplacementReadyState
+Switching to initializer state: PotentialMarginalizationReplacementState
+GTData distance (seconds): 0.00162471
+GTData distance (seconds): 0.00162671
+GTData distance (seconds): 0.00162771
+GTData distance (seconds): 0.00162971
+GTData distance (seconds): 0.00163071
+Updating transform with index 0 to val: 1.21677
+PGBA: Built graph with 13 IMU factors and 14 poses.
+Switching to initializer state: MarginalizationReplacementReadyState
+Switching to initializer state: PotentialMarginalizationReplacementState
+GTData distance (seconds): 0.00163271
+GTData distance (seconds): 0.00163471
+GTData distance (seconds): 0.00163571
+GTData distance (seconds): 0.00220859
+GTData distance (seconds): 0.00221059
+GTData distance (seconds): 0.00221159
+GTData distance (seconds): 0.00221359
+GTData distance (seconds): 0.00221459
+GTData distance (seconds): 0.00221659
+GTData distance (seconds): 0.00221759
+GTData distance (seconds): 0.00221859
+GTData distance (seconds): 0.00222059
+GTData distance (seconds): 0.00226384
+GTData distance (seconds): 0.00226584
+GTData distance (seconds): 0.00226784
+GTData distance (seconds): 0.00226884
+GTData distance (seconds): 0.00227084
+GTData distance (seconds): 0.00227184
+GTData distance (seconds): 0.00227384
+GTData distance (seconds): 0.00227484
+GTData distance (seconds): 0.00176063
+GTData distance (seconds): 0.00176263
+GTData distance (seconds): 0.00176363
+GTData distance (seconds): 0.00176563
+GTData distance (seconds): 0.00176663
+GTData distance (seconds): 0.00176863
+Updating transform with index 0 to val: 1.25167
+PGBA: Built graph with 21 IMU factors and 22 poses.
+Switching to initializer state: MarginalizationReplacementReadyState
+Switching to initializer state: PotentialMarginalizationReplacementState
+GTData distance (seconds): 0.00176963
+GTData distance (seconds): 0.00177163
+GTData distance (seconds): 0.00173108
+GTData distance (seconds): 0.00173308
+GTData distance (seconds): 0.00173508
+GTData distance (seconds): 0.00173608
+GTData distance (seconds): 0.00173908
+GTData distance (seconds): 0.00174008
+GTData distance (seconds): 0.00174208
+GTData distance (seconds): 0.00174308
+GTData distance (seconds): 0.00222422
+GTData distance (seconds): 0.00222622
+GTData distance (seconds): 0.00222722
+GTData distance (seconds): 0.00222922
+GTData distance (seconds): 0.00223122
+Updating transform with index 0 to val: 1.22026
+PGBA: Built graph with 26 IMU factors and 27 poses.
+Switching to initializer state: MarginalizationReplacementReadyState
+Switching to initializer state: PotentialMarginalizationReplacementState
+GTData distance (seconds): 0.00223222
+GTData distance (seconds): 0.00223422
+GTData distance (seconds): 0.00223522
+GTData distance (seconds): 0.00280375
+GTData distance (seconds): 0.00275675
+GTData distance (seconds): 0.00275875
+GTData distance (seconds): 0.00275975
+GTData distance (seconds): 0.00276175
+GTData distance (seconds): 0.00276275
+GTData distance (seconds): 0.00276475
+GTData distance (seconds): 0.00276575
+GTData distance (seconds): 0.00276775
+GTData distance (seconds): 0.0025548
+GTData distance (seconds): 0.0025558
+GTData distance (seconds): 0.0025578
+GTData distance (seconds): 0.0025588
+GTData distance (seconds): 0.0025608
+Updating transform with index 0 to val: 1.2454
+PGBA: Built graph with 32 IMU factors and 33 poses.
+Switching to initializer state: MarginalizationReplacementReadyState
+Switching to initializer state: PotentialMarginalizationReplacementState
+GTData distance (seconds): 0.0025618
+GTData distance (seconds): 0.0025638
+GTData distance (seconds): 0.0025648
+GTData distance (seconds): 0.00194308
+GTData distance (seconds): 0.00194508
+Updating transform with index 0 to val: 1.27521
+PGBA: Built graph with 34 IMU factors and 35 poses.
+Switching to initializer state: MarginalizationReplacementReadyState
+Switching to initializer state: PotentialMarginalizationReplacementState
+GTData distance (seconds): 0.00194708
+GTData distance (seconds): 0.00194908
+GTData distance (seconds): 0.00195008
+GTData distance (seconds): 0.00195108
+GTData distance (seconds): 0.00195308
+GTData distance (seconds): 0.00195508
+GTData distance (seconds): 0.00181973
+GTData distance (seconds): 0.00182073
+GTData distance (seconds): 0.00182273
+GTData distance (seconds): 0.00182473
+GTData distance (seconds): 0.00182573
+GTData distance (seconds): 0.00182773
+GTData distance (seconds): 0.00182873
+GTData distance (seconds): 0.00192973
+GTData distance (seconds): 0.00232864
+GTData distance (seconds): 0.00233064
+GTData distance (seconds): 0.00233164
+GTData distance (seconds): 0.00233364
+GTData distance (seconds): 0.00233464
+GTData distance (seconds): 0.00233664
+GTData distance (seconds): 0.00233764
+GTData distance (seconds): 0.00233964
+GTData distance (seconds): 0.00238887
+GTData distance (seconds): 0.00238987
+GTData distance (seconds): 0.00239187
+GTData distance (seconds): 0.00239287
+GTData distance (seconds): 0.00239487
+GTData distance (seconds): 0.00239587
+GTData distance (seconds): 0.00239787
+GTData distance (seconds): 0.00239987
+Updating transform with index 0 to val: 1.24996
+PGBA: Built graph with 46 IMU factors and 47 poses.
+Switching to initializer state: MarginalizationReplacementReadyState
+Switching to initializer state: PotentialMarginalizationReplacementState
+GTData distance (seconds): 0.00185687
+GTData distance (seconds): 0.00185887
+GTData distance (seconds): 0.00186087
+GTData distance (seconds): 0.00186187
+GTData distance (seconds): 0.00186387
+GTData distance (seconds): 0.00186487
+GTData distance (seconds): 0.00186687
+GTData distance (seconds): 0.00186787
+GTData distance (seconds): 0.00186987
+GTData distance (seconds): 0.00172771
+GTData distance (seconds): 0.00172971
+GTData distance (seconds): 0.00173071
+GTData distance (seconds): 0.00173271
+GTData distance (seconds): 0.00173471
+GTData distance (seconds): 0.00173671
+GTData distance (seconds): 0.00173771
+GTData distance (seconds): 0.00173871
+GTData distance (seconds): 0.00184401
+GTData distance (seconds): 0.00184501
+GTData distance (seconds): 0.00184701
+GTData distance (seconds): 0.00184801
+GTData distance (seconds): 0.00185001
+GTData distance (seconds): 0.00185101
+GTData distance (seconds): 0.00185301
+GTData distance (seconds): 0.00185501
+GTData distance (seconds): 0.00213966
+GTData distance (seconds): 0.00214166
+GTData distance (seconds): 0.00214266
+GTData distance (seconds): 0.00214466
+GTData distance (seconds): 0.00214566
+GTData distance (seconds): 0.00214766
+GTData distance (seconds): 0.00214966
+Updating transform with index 0 to val: 1.27641
+PGBA: Built graph with 58 IMU factors and 59 poses.
+Switching to initializer state: MarginalizationReplacementReadyState
+Switching to initializer state: PotentialMarginalizationReplacementState
+GTData distance (seconds): 0.00215066
+GTData distance (seconds): 0.00219428
+GTData distance (seconds): 0.00219528
+GTData distance (seconds): 0.00219728
+GTData distance (seconds): 0.00219928
+GTData distance (seconds): 0.00220127
+GTData distance (seconds): 0.00220228
+GTData distance (seconds): 0.00220328
+GTData distance (seconds): 0.00220528
+GTData distance (seconds): 0.00201112
+GTData distance (seconds): 0.00201312
+GTData distance (seconds): 0.00201512
+GTData distance (seconds): 0.00201612
+GTData distance (seconds): 0.00201812
+GTData distance (seconds): 0.00205312
+GTData distance (seconds): 0.00202112
+GTData distance (seconds): 0.00202212
+GTData distance (seconds): 0.00202412
+GTData distance (seconds): 0.00206189
+GTData distance (seconds): 0.00206389
+GTData distance (seconds): 0.00206489
+GTData distance (seconds): 0.00206689
+GTData distance (seconds): 0.00206789
+GTData distance (seconds): 0.00206989
+GTData distance (seconds): 0.00207189
+GTData distance (seconds): 0.00207289
+GTData distance (seconds): 0.00233264
+GTData distance (seconds): 0.00233364
+GTData distance (seconds): 0.00233564
+GTData distance (seconds): 0.00233664
+GTData distance (seconds): 0.00233864
+GTData distance (seconds): 0.00234064
+GTData distance (seconds): 0.00234164
+GTData distance (seconds): 0.00234364
+GTData distance (seconds): 0.00214066
+GTData distance (seconds): 0.00214166
+GTData distance (seconds): 0.00214366
+GTData distance (seconds): 0.00214466
+GTData distance (seconds): 0.00214666
+GTData distance (seconds): 0.00214766
+GTData distance (seconds): 0.00214966
+GTData distance (seconds): 0.00215066
+GTData distance (seconds): 0.00189547
+GTData distance (seconds): 0.00189747
+GTData distance (seconds): 0.00189847
+GTData distance (seconds): 0.00190047
+GTData distance (seconds): 0.00198147
+GTData distance (seconds): 0.00190247
+GTData distance (seconds): 0.00190447
+GTData distance (seconds): 0.00190647
+GTData distance (seconds): 0.00200536
+GTData distance (seconds): 0.00200736
+Caught signal 2

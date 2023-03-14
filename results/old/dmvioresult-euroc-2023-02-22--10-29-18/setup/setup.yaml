@@ -1,0 +1,578 @@
+name: dmvioresult
+dataset: euroc
+build_type: RelWithDebInfo
+num_iter: 10
+only_seq:
+results_name: dmvioresult-euroc-2023-02-22--10-29-18
+config_name: workpc
+date_run: 2023-02-22 10:29:18.405018
+realtime: false
+temporary: false
+noimu: false
+quiet: false
+output_type: save
+withgui: false
+custom_dmvio_args: ''
+dmvio_settings: ''
+gdb: false
+git_hash: 77571c4c1d9f4cf8943bd2f8c6e1ed703d064739
+commit_message: 'Small fix: Clone Mat before passing it to the datasetSaver, fixes
+  #17'
+commit_time: 2022-06-24 11:17:17
+diff_empty: false
+eval_tool_command: /home/cm2113/workspace/dm-vio-python-tools/run_dmvio.py
+eval_tools_git_hash: 3c040993beb247bfbfe26f4672d672b6d9bf8e37
+eval_tools_commit_message: Make interpolate_imu_file.py work for long timestamps which
+  cannot be represented as floats. This does not change anything for the default datasets
+  but will be useful for applying the code to other datasets.
+eval_tools_diff_empty: false
+command_0: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_01_easy_0/
+  start=950 end=3600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_01_easy_0_runoutput.txt
+  2>&1
+cwd0: /home/cm2113/workspace/Datasets/euroc/MH_01_easy/mav0/cam0
+command_1: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_01_easy_1/
+  start=950 end=3600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_01_easy_1_runoutput.txt
+  2>&1
+cwd1: /home/cm2113/workspace/Datasets/euroc/MH_01_easy/mav0/cam0
+command_2: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_01_easy_2/
+  start=950 end=3600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_01_easy_2_runoutput.txt
+  2>&1
+cwd2: /home/cm2113/workspace/Datasets/euroc/MH_01_easy/mav0/cam0
+command_3: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_01_easy_3/
+  start=950 end=3600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_01_easy_3_runoutput.txt
+  2>&1
+cwd3: /home/cm2113/workspace/Datasets/euroc/MH_01_easy/mav0/cam0
+command_4: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_01_easy_4/
+  start=950 end=3600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_01_easy_4_runoutput.txt
+  2>&1
+cwd4: /home/cm2113/workspace/Datasets/euroc/MH_01_easy/mav0/cam0
+command_5: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_01_easy_5/
+  start=950 end=3600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_01_easy_5_runoutput.txt
+  2>&1
+cwd5: /home/cm2113/workspace/Datasets/euroc/MH_01_easy/mav0/cam0
+command_6: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_01_easy_6/
+  start=950 end=3600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_01_easy_6_runoutput.txt
+  2>&1
+cwd6: /home/cm2113/workspace/Datasets/euroc/MH_01_easy/mav0/cam0
+command_7: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_01_easy_7/
+  start=950 end=3600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_01_easy_7_runoutput.txt
+  2>&1
+cwd7: /home/cm2113/workspace/Datasets/euroc/MH_01_easy/mav0/cam0
+command_8: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_01_easy_8/
+  start=950 end=3600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_01_easy_8_runoutput.txt
+  2>&1
+cwd8: /home/cm2113/workspace/Datasets/euroc/MH_01_easy/mav0/cam0
+command_9: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_01_easy_9/
+  start=950 end=3600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_01_easy_9_runoutput.txt
+  2>&1
+cwd9: /home/cm2113/workspace/Datasets/euroc/MH_01_easy/mav0/cam0
+command_10: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_02_easy_0/
+  start=800 end=3000 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_02_easy_0_runoutput.txt
+  2>&1
+cwd10: /home/cm2113/workspace/Datasets/euroc/MH_02_easy/mav0/cam0
+command_11: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_02_easy_1/
+  start=800 end=3000 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_02_easy_1_runoutput.txt
+  2>&1
+cwd11: /home/cm2113/workspace/Datasets/euroc/MH_02_easy/mav0/cam0
+command_12: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_02_easy_2/
+  start=800 end=3000 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_02_easy_2_runoutput.txt
+  2>&1
+cwd12: /home/cm2113/workspace/Datasets/euroc/MH_02_easy/mav0/cam0
+command_13: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_02_easy_3/
+  start=800 end=3000 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_02_easy_3_runoutput.txt
+  2>&1
+cwd13: /home/cm2113/workspace/Datasets/euroc/MH_02_easy/mav0/cam0
+command_14: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_02_easy_4/
+  start=800 end=3000 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_02_easy_4_runoutput.txt
+  2>&1
+cwd14: /home/cm2113/workspace/Datasets/euroc/MH_02_easy/mav0/cam0
+command_15: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_02_easy_5/
+  start=800 end=3000 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_02_easy_5_runoutput.txt
+  2>&1
+cwd15: /home/cm2113/workspace/Datasets/euroc/MH_02_easy/mav0/cam0
+command_16: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_02_easy_6/
+  start=800 end=3000 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_02_easy_6_runoutput.txt
+  2>&1
+cwd16: /home/cm2113/workspace/Datasets/euroc/MH_02_easy/mav0/cam0
+command_17: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_02_easy_7/
+  start=800 end=3000 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_02_easy_7_runoutput.txt
+  2>&1
+cwd17: /home/cm2113/workspace/Datasets/euroc/MH_02_easy/mav0/cam0
+command_18: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_02_easy_8/
+  start=800 end=3000 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_02_easy_8_runoutput.txt
+  2>&1
+cwd18: /home/cm2113/workspace/Datasets/euroc/MH_02_easy/mav0/cam0
+command_19: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_02_easy_9/
+  start=800 end=3000 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_02_easy_9_runoutput.txt
+  2>&1
+cwd19: /home/cm2113/workspace/Datasets/euroc/MH_02_easy/mav0/cam0
+command_20: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_03_medium_0/
+  start=410 end=2600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_03_medium_0_runoutput.txt
+  2>&1
+cwd20: /home/cm2113/workspace/Datasets/euroc/MH_03_medium/mav0/cam0
+command_21: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_03_medium_1/
+  start=410 end=2600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_03_medium_1_runoutput.txt
+  2>&1
+cwd21: /home/cm2113/workspace/Datasets/euroc/MH_03_medium/mav0/cam0
+command_22: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_03_medium_2/
+  start=410 end=2600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_03_medium_2_runoutput.txt
+  2>&1
+cwd22: /home/cm2113/workspace/Datasets/euroc/MH_03_medium/mav0/cam0
+command_23: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_03_medium_3/
+  start=410 end=2600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_03_medium_3_runoutput.txt
+  2>&1
+cwd23: /home/cm2113/workspace/Datasets/euroc/MH_03_medium/mav0/cam0
+command_24: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_03_medium_4/
+  start=410 end=2600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_03_medium_4_runoutput.txt
+  2>&1
+cwd24: /home/cm2113/workspace/Datasets/euroc/MH_03_medium/mav0/cam0
+command_25: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_03_medium_5/
+  start=410 end=2600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_03_medium_5_runoutput.txt
+  2>&1
+cwd25: /home/cm2113/workspace/Datasets/euroc/MH_03_medium/mav0/cam0
+command_26: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_03_medium_6/
+  start=410 end=2600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_03_medium_6_runoutput.txt
+  2>&1
+cwd26: /home/cm2113/workspace/Datasets/euroc/MH_03_medium/mav0/cam0
+command_27: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_03_medium_7/
+  start=410 end=2600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_03_medium_7_runoutput.txt
+  2>&1
+cwd27: /home/cm2113/workspace/Datasets/euroc/MH_03_medium/mav0/cam0
+command_28: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_03_medium_8/
+  start=410 end=2600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_03_medium_8_runoutput.txt
+  2>&1
+cwd28: /home/cm2113/workspace/Datasets/euroc/MH_03_medium/mav0/cam0
+command_29: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_03_medium_9/
+  start=410 end=2600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_03_medium_9_runoutput.txt
+  2>&1
+cwd29: /home/cm2113/workspace/Datasets/euroc/MH_03_medium/mav0/cam0
+command_30: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_04_difficult_0/
+  start=445 end=1925 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_04_difficult_0_runoutput.txt
+  2>&1
+cwd30: /home/cm2113/workspace/Datasets/euroc/MH_04_difficult/mav0/cam0
+command_31: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_04_difficult_1/
+  start=445 end=1925 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_04_difficult_1_runoutput.txt
+  2>&1
+cwd31: /home/cm2113/workspace/Datasets/euroc/MH_04_difficult/mav0/cam0
+command_32: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_04_difficult_2/
+  start=445 end=1925 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_04_difficult_2_runoutput.txt
+  2>&1
+cwd32: /home/cm2113/workspace/Datasets/euroc/MH_04_difficult/mav0/cam0
+command_33: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_04_difficult_3/
+  start=445 end=1925 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_04_difficult_3_runoutput.txt
+  2>&1
+cwd33: /home/cm2113/workspace/Datasets/euroc/MH_04_difficult/mav0/cam0
+command_34: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_04_difficult_4/
+  start=445 end=1925 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_04_difficult_4_runoutput.txt
+  2>&1
+cwd34: /home/cm2113/workspace/Datasets/euroc/MH_04_difficult/mav0/cam0
+command_35: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_04_difficult_5/
+  start=445 end=1925 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_04_difficult_5_runoutput.txt
+  2>&1
+cwd35: /home/cm2113/workspace/Datasets/euroc/MH_04_difficult/mav0/cam0
+command_36: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_04_difficult_6/
+  start=445 end=1925 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_04_difficult_6_runoutput.txt
+  2>&1
+cwd36: /home/cm2113/workspace/Datasets/euroc/MH_04_difficult/mav0/cam0
+command_37: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_04_difficult_7/
+  start=445 end=1925 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_04_difficult_7_runoutput.txt
+  2>&1
+cwd37: /home/cm2113/workspace/Datasets/euroc/MH_04_difficult/mav0/cam0
+command_38: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_04_difficult_8/
+  start=445 end=1925 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_04_difficult_8_runoutput.txt
+  2>&1
+cwd38: /home/cm2113/workspace/Datasets/euroc/MH_04_difficult/mav0/cam0
+command_39: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_04_difficult_9/
+  start=445 end=1925 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_04_difficult_9_runoutput.txt
+  2>&1
+cwd39: /home/cm2113/workspace/Datasets/euroc/MH_04_difficult/mav0/cam0
+command_40: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_05_difficult_0/
+  start=460 end=2200 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_05_difficult_0_runoutput.txt
+  2>&1
+cwd40: /home/cm2113/workspace/Datasets/euroc/MH_05_difficult/mav0/cam0
+command_41: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_05_difficult_1/
+  start=460 end=2200 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_05_difficult_1_runoutput.txt
+  2>&1
+cwd41: /home/cm2113/workspace/Datasets/euroc/MH_05_difficult/mav0/cam0
+command_42: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_05_difficult_2/
+  start=460 end=2200 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_05_difficult_2_runoutput.txt
+  2>&1
+cwd42: /home/cm2113/workspace/Datasets/euroc/MH_05_difficult/mav0/cam0
+command_43: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_05_difficult_3/
+  start=460 end=2200 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_05_difficult_3_runoutput.txt
+  2>&1
+cwd43: /home/cm2113/workspace/Datasets/euroc/MH_05_difficult/mav0/cam0
+command_44: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_05_difficult_4/
+  start=460 end=2200 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_05_difficult_4_runoutput.txt
+  2>&1
+cwd44: /home/cm2113/workspace/Datasets/euroc/MH_05_difficult/mav0/cam0
+command_45: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_05_difficult_5/
+  start=460 end=2200 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_05_difficult_5_runoutput.txt
+  2>&1
+cwd45: /home/cm2113/workspace/Datasets/euroc/MH_05_difficult/mav0/cam0
+command_46: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_05_difficult_6/
+  start=460 end=2200 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_05_difficult_6_runoutput.txt
+  2>&1
+cwd46: /home/cm2113/workspace/Datasets/euroc/MH_05_difficult/mav0/cam0
+command_47: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_05_difficult_7/
+  start=460 end=2200 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_05_difficult_7_runoutput.txt
+  2>&1
+cwd47: /home/cm2113/workspace/Datasets/euroc/MH_05_difficult/mav0/cam0
+command_48: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_05_difficult_8/
+  start=460 end=2200 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_05_difficult_8_runoutput.txt
+  2>&1
+cwd48: /home/cm2113/workspace/Datasets/euroc/MH_05_difficult/mav0/cam0
+command_49: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_MH_05_difficult_9/
+  start=460 end=2200 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_MH_05_difficult_9_runoutput.txt
+  2>&1
+cwd49: /home/cm2113/workspace/Datasets/euroc/MH_05_difficult/mav0/cam0
+command_50: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_01_easy_0/
+  start=22 end=2800 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_01_easy_0_runoutput.txt
+  2>&1
+cwd50: /home/cm2113/workspace/Datasets/euroc/V1_01_easy/mav0/cam0
+command_51: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_01_easy_1/
+  start=22 end=2800 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_01_easy_1_runoutput.txt
+  2>&1
+cwd51: /home/cm2113/workspace/Datasets/euroc/V1_01_easy/mav0/cam0
+command_52: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_01_easy_2/
+  start=22 end=2800 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_01_easy_2_runoutput.txt
+  2>&1
+cwd52: /home/cm2113/workspace/Datasets/euroc/V1_01_easy/mav0/cam0
+command_53: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_01_easy_3/
+  start=22 end=2800 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_01_easy_3_runoutput.txt
+  2>&1
+cwd53: /home/cm2113/workspace/Datasets/euroc/V1_01_easy/mav0/cam0
+command_54: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_01_easy_4/
+  start=22 end=2800 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_01_easy_4_runoutput.txt
+  2>&1
+cwd54: /home/cm2113/workspace/Datasets/euroc/V1_01_easy/mav0/cam0
+command_55: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_01_easy_5/
+  start=22 end=2800 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_01_easy_5_runoutput.txt
+  2>&1
+cwd55: /home/cm2113/workspace/Datasets/euroc/V1_01_easy/mav0/cam0
+command_56: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_01_easy_6/
+  start=22 end=2800 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_01_easy_6_runoutput.txt
+  2>&1
+cwd56: /home/cm2113/workspace/Datasets/euroc/V1_01_easy/mav0/cam0
+command_57: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_01_easy_7/
+  start=22 end=2800 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_01_easy_7_runoutput.txt
+  2>&1
+cwd57: /home/cm2113/workspace/Datasets/euroc/V1_01_easy/mav0/cam0
+command_58: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_01_easy_8/
+  start=22 end=2800 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_01_easy_8_runoutput.txt
+  2>&1
+cwd58: /home/cm2113/workspace/Datasets/euroc/V1_01_easy/mav0/cam0
+command_59: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_01_easy_9/
+  start=22 end=2800 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_01_easy_9_runoutput.txt
+  2>&1
+cwd59: /home/cm2113/workspace/Datasets/euroc/V1_01_easy/mav0/cam0
+command_60: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_02_medium_0/
+  start=115 end=1600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_02_medium_0_runoutput.txt
+  2>&1
+cwd60: /home/cm2113/workspace/Datasets/euroc/V1_02_medium/mav0/cam0
+command_61: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_02_medium_1/
+  start=115 end=1600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_02_medium_1_runoutput.txt
+  2>&1
+cwd61: /home/cm2113/workspace/Datasets/euroc/V1_02_medium/mav0/cam0
+command_62: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_02_medium_2/
+  start=115 end=1600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_02_medium_2_runoutput.txt
+  2>&1
+cwd62: /home/cm2113/workspace/Datasets/euroc/V1_02_medium/mav0/cam0
+command_63: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_02_medium_3/
+  start=115 end=1600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_02_medium_3_runoutput.txt
+  2>&1
+cwd63: /home/cm2113/workspace/Datasets/euroc/V1_02_medium/mav0/cam0
+command_64: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_02_medium_4/
+  start=115 end=1600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_02_medium_4_runoutput.txt
+  2>&1
+cwd64: /home/cm2113/workspace/Datasets/euroc/V1_02_medium/mav0/cam0
+command_65: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_02_medium_5/
+  start=115 end=1600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_02_medium_5_runoutput.txt
+  2>&1
+cwd65: /home/cm2113/workspace/Datasets/euroc/V1_02_medium/mav0/cam0
+command_66: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_02_medium_6/
+  start=115 end=1600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_02_medium_6_runoutput.txt
+  2>&1
+cwd66: /home/cm2113/workspace/Datasets/euroc/V1_02_medium/mav0/cam0
+command_67: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_02_medium_7/
+  start=115 end=1600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_02_medium_7_runoutput.txt
+  2>&1
+cwd67: /home/cm2113/workspace/Datasets/euroc/V1_02_medium/mav0/cam0
+command_68: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_02_medium_8/
+  start=115 end=1600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_02_medium_8_runoutput.txt
+  2>&1
+cwd68: /home/cm2113/workspace/Datasets/euroc/V1_02_medium/mav0/cam0
+command_69: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_02_medium_9/
+  start=115 end=1600 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_02_medium_9_runoutput.txt
+  2>&1
+cwd69: /home/cm2113/workspace/Datasets/euroc/V1_02_medium/mav0/cam0
+command_70: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_03_difficult_0/
+  start=250 end=2020 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_03_difficult_0_runoutput.txt
+  2>&1
+cwd70: /home/cm2113/workspace/Datasets/euroc/V1_03_difficult/mav0/cam0
+command_71: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_03_difficult_1/
+  start=250 end=2020 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_03_difficult_1_runoutput.txt
+  2>&1
+cwd71: /home/cm2113/workspace/Datasets/euroc/V1_03_difficult/mav0/cam0
+command_72: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_03_difficult_2/
+  start=250 end=2020 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_03_difficult_2_runoutput.txt
+  2>&1
+cwd72: /home/cm2113/workspace/Datasets/euroc/V1_03_difficult/mav0/cam0
+command_73: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_03_difficult_3/
+  start=250 end=2020 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_03_difficult_3_runoutput.txt
+  2>&1
+cwd73: /home/cm2113/workspace/Datasets/euroc/V1_03_difficult/mav0/cam0
+command_74: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_03_difficult_4/
+  start=250 end=2020 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_03_difficult_4_runoutput.txt
+  2>&1
+cwd74: /home/cm2113/workspace/Datasets/euroc/V1_03_difficult/mav0/cam0
+command_75: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_03_difficult_5/
+  start=250 end=2020 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_03_difficult_5_runoutput.txt
+  2>&1
+cwd75: /home/cm2113/workspace/Datasets/euroc/V1_03_difficult/mav0/cam0
+command_76: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_03_difficult_6/
+  start=250 end=2020 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_03_difficult_6_runoutput.txt
+  2>&1
+cwd76: /home/cm2113/workspace/Datasets/euroc/V1_03_difficult/mav0/cam0
+command_77: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_03_difficult_7/
+  start=250 end=2020 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_03_difficult_7_runoutput.txt
+  2>&1
+cwd77: /home/cm2113/workspace/Datasets/euroc/V1_03_difficult/mav0/cam0
+command_78: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_03_difficult_8/
+  start=250 end=2020 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_03_difficult_8_runoutput.txt
+  2>&1
+cwd78: /home/cm2113/workspace/Datasets/euroc/V1_03_difficult/mav0/cam0
+command_79: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V1_03_difficult_9/
+  start=250 end=2020 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V1_03_difficult_9_runoutput.txt
+  2>&1
+cwd79: /home/cm2113/workspace/Datasets/euroc/V1_03_difficult/mav0/cam0
+command_80: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_01_easy_0/
+  start=26 end=2130 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_01_easy_0_runoutput.txt
+  2>&1
+cwd80: /home/cm2113/workspace/Datasets/euroc/V2_01_easy/mav0/cam0
+command_81: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_01_easy_1/
+  start=26 end=2130 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_01_easy_1_runoutput.txt
+  2>&1
+cwd81: /home/cm2113/workspace/Datasets/euroc/V2_01_easy/mav0/cam0
+command_82: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_01_easy_2/
+  start=26 end=2130 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_01_easy_2_runoutput.txt
+  2>&1
+cwd82: /home/cm2113/workspace/Datasets/euroc/V2_01_easy/mav0/cam0
+command_83: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_01_easy_3/
+  start=26 end=2130 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_01_easy_3_runoutput.txt
+  2>&1
+cwd83: /home/cm2113/workspace/Datasets/euroc/V2_01_easy/mav0/cam0
+command_84: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_01_easy_4/
+  start=26 end=2130 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_01_easy_4_runoutput.txt
+  2>&1
+cwd84: /home/cm2113/workspace/Datasets/euroc/V2_01_easy/mav0/cam0
+command_85: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_01_easy_5/
+  start=26 end=2130 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_01_easy_5_runoutput.txt
+  2>&1
+cwd85: /home/cm2113/workspace/Datasets/euroc/V2_01_easy/mav0/cam0
+command_86: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_01_easy_6/
+  start=26 end=2130 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_01_easy_6_runoutput.txt
+  2>&1
+cwd86: /home/cm2113/workspace/Datasets/euroc/V2_01_easy/mav0/cam0
+command_87: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_01_easy_7/
+  start=26 end=2130 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_01_easy_7_runoutput.txt
+  2>&1
+cwd87: /home/cm2113/workspace/Datasets/euroc/V2_01_easy/mav0/cam0
+command_88: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_01_easy_8/
+  start=26 end=2130 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_01_easy_8_runoutput.txt
+  2>&1
+cwd88: /home/cm2113/workspace/Datasets/euroc/V2_01_easy/mav0/cam0
+command_89: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_01_easy_9/
+  start=26 end=2130 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_01_easy_9_runoutput.txt
+  2>&1
+cwd89: /home/cm2113/workspace/Datasets/euroc/V2_01_easy/mav0/cam0
+command_90: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_02_medium_0/
+  start=100 end=2230 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_02_medium_0_runoutput.txt
+  2>&1
+cwd90: /home/cm2113/workspace/Datasets/euroc/V2_02_medium/mav0/cam0
+command_91: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_02_medium_1/
+  start=100 end=2230 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_02_medium_1_runoutput.txt
+  2>&1
+cwd91: /home/cm2113/workspace/Datasets/euroc/V2_02_medium/mav0/cam0
+command_92: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_02_medium_2/
+  start=100 end=2230 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_02_medium_2_runoutput.txt
+  2>&1
+cwd92: /home/cm2113/workspace/Datasets/euroc/V2_02_medium/mav0/cam0
+command_93: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_02_medium_3/
+  start=100 end=2230 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_02_medium_3_runoutput.txt
+  2>&1
+cwd93: /home/cm2113/workspace/Datasets/euroc/V2_02_medium/mav0/cam0
+command_94: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_02_medium_4/
+  start=100 end=2230 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_02_medium_4_runoutput.txt
+  2>&1
+cwd94: /home/cm2113/workspace/Datasets/euroc/V2_02_medium/mav0/cam0
+command_95: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_02_medium_5/
+  start=100 end=2230 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_02_medium_5_runoutput.txt
+  2>&1
+cwd95: /home/cm2113/workspace/Datasets/euroc/V2_02_medium/mav0/cam0
+command_96: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_02_medium_6/
+  start=100 end=2230 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_02_medium_6_runoutput.txt
+  2>&1
+cwd96: /home/cm2113/workspace/Datasets/euroc/V2_02_medium/mav0/cam0
+command_97: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_02_medium_7/
+  start=100 end=2230 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_02_medium_7_runoutput.txt
+  2>&1
+cwd97: /home/cm2113/workspace/Datasets/euroc/V2_02_medium/mav0/cam0
+command_98: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_02_medium_8/
+  start=100 end=2230 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_02_medium_8_runoutput.txt
+  2>&1
+cwd98: /home/cm2113/workspace/Datasets/euroc/V2_02_medium/mav0/cam0
+command_99: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_02_medium_9/
+  start=100 end=2230 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_02_medium_9_runoutput.txt
+  2>&1
+cwd99: /home/cm2113/workspace/Datasets/euroc/V2_02_medium/mav0/cam0
+command_100: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_03_difficult_0/
+  start=115 end=1880 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_03_difficult_0_runoutput.txt
+  2>&1
+cwd100: /home/cm2113/workspace/Datasets/euroc/V2_03_difficult/mav0/cam0
+command_101: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_03_difficult_1/
+  start=115 end=1880 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_03_difficult_1_runoutput.txt
+  2>&1
+cwd101: /home/cm2113/workspace/Datasets/euroc/V2_03_difficult/mav0/cam0
+command_102: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_03_difficult_2/
+  start=115 end=1880 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_03_difficult_2_runoutput.txt
+  2>&1
+cwd102: /home/cm2113/workspace/Datasets/euroc/V2_03_difficult/mav0/cam0
+command_103: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_03_difficult_3/
+  start=115 end=1880 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_03_difficult_3_runoutput.txt
+  2>&1
+cwd103: /home/cm2113/workspace/Datasets/euroc/V2_03_difficult/mav0/cam0
+command_104: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_03_difficult_4/
+  start=115 end=1880 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_03_difficult_4_runoutput.txt
+  2>&1
+cwd104: /home/cm2113/workspace/Datasets/euroc/V2_03_difficult/mav0/cam0
+command_105: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_03_difficult_5/
+  start=115 end=1880 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_03_difficult_5_runoutput.txt
+  2>&1
+cwd105: /home/cm2113/workspace/Datasets/euroc/V2_03_difficult/mav0/cam0
+command_106: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_03_difficult_6/
+  start=115 end=1880 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_03_difficult_6_runoutput.txt
+  2>&1
+cwd106: /home/cm2113/workspace/Datasets/euroc/V2_03_difficult/mav0/cam0
+command_107: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_03_difficult_7/
+  start=115 end=1880 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_03_difficult_7_runoutput.txt
+  2>&1
+cwd107: /home/cm2113/workspace/Datasets/euroc/V2_03_difficult/mav0/cam0
+command_108: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_03_difficult_8/
+  start=115 end=1880 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_03_difficult_8_runoutput.txt
+  2>&1
+cwd108: /home/cm2113/workspace/Datasets/euroc/V2_03_difficult/mav0/cam0
+command_109: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./data calib=./camera.txt mode=1 preset=0 nogui=1 useimu=1 quiet=0 resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/mav_V2_03_difficult_9/
+  start=115 end=1880 > /home/cm2113/workspace/dm-vio/results/dmvioresult-euroc-2023-02-22--10-29-18/runoutputs/mav_V2_03_difficult_9_runoutput.txt
+  2>&1
+cwd109: /home/cm2113/workspace/Datasets/euroc/V2_03_difficult/mav0/cam0

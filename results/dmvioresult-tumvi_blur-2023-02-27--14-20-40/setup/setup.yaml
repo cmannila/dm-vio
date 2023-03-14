@@ -1,0 +1,38 @@
+name: dmvioresult
+dataset: tumvi_blur
+build_type: RelWithDebInfo
+num_iter: 1
+only_seq: 0
+results_name: dmvioresult-tumvi_blur-2023-02-27--14-20-40
+config_name: workpc
+date_run: 2023-02-27 14:20:40.600626
+realtime: false
+temporary: false
+noimu: false
+quiet: true
+output_type: save
+withgui: false
+custom_dmvio_args: ''
+dmvio_settings: tumvi.yaml
+gdb: false
+git_hash: 77571c4c1d9f4cf8943bd2f8c6e1ed703d064739
+commit_message: 'Small fix: Clone Mat before passing it to the datasetSaver, fixes
+  #17'
+commit_time: 2022-06-24 11:17:17
+diff_empty: false
+eval_tool_command: run_dmvio.py --output=save --dataset=tumvi_blur --dmvio_settings=tumvi.yaml
+  --iter=1 --only_seq=0 --result=True --run=9 --quiet
+eval_tools_git_hash: 3c040993beb247bfbfe26f4672d672b6d9bf8e37
+eval_tools_commit_message: Make interpolate_imu_file.py work for long timestamps which
+  cannot be represented as floats. This does not change anything for the default datasets
+  but will be useful for applying the code to other datasets.
+eval_tools_diff_empty: false
+command_0: /home/cm2113/workspace/dm-vio/cmake-build-relwithdebinfo/bin/dmvio_dataset
+  files=./blurred_data calib=/home/cm2113/workspace/dm-vio/configs/tumvi_calib/camera02.txt
+  gamma=/home/cm2113/workspace/dm-vio/configs/tumvi_calib/pcalib.txt vignette=vignette.png
+  imuFile=../imu.txt gtFile=../gt_imu.csv imuCalib=/home/cm2113/workspace/dm-vio/configs/tumvi_calib/camchain.yaml
+  mode=0 use16Bit=1 preset=0 nogui=1 useimu=1 quiet=1 settingsFile=/home/cm2113/workspace/dm-vio/configs/tumvi.yaml
+  resultsPrefix=/home/cm2113/workspace/dm-vio/results/dmvioresult-tumvi_blur-2023-02-27--14-20-40/tumvi_dataset-room1_512_16_0/
+  start=2 > /home/cm2113/workspace/dm-vio/results/dmvioresult-tumvi_blur-2023-02-27--14-20-40/runoutputs/tumvi_dataset-room1_512_16_0_runoutput.txt
+  2>&1
+cwd0: /home/cm2113/workspace/Datasets/tumvi/room/dataset-room1_512_16/dso/cam0
