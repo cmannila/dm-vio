@@ -136,7 +136,7 @@ int   setting_minGoodResForMarg=4;
 // 1 = apply inv. response.
 // 2 = apply inv. response & remove V.
 int setting_photometricCalibration = 2;
-bool setting_useExposure = true;
+bool setting_useExposure = false;
 float setting_affineOptModeA = 1e12; //-1: fix. >=0: optimize (with prior, if > 0).
 float setting_affineOptModeB = 1e8; //-1: fix. >=0: optimize (with prior, if > 0).
 float setting_affineOptModeA_huberTH = 10000;
