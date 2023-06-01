@@ -470,6 +470,13 @@ float FullSystem::optimize(int mnumOptIts)
         printf("Initial Error       \t");
         printOptRes(lastEnergy, lastEnergyL, lastEnergyM, 0, 0, frameHessians.back()->aff_g2l().a, frameHessians.back()->aff_g2l().b);
     }
+	std::ofstream fw("/home/cm2113/workspace/dm-vio-python-tools/photometric_error.txt", std::ofstream::app);  
+    if (fw.is_open())
+    {
+        fw << sqrtf((float)(lastEnergy[0] / (patternNum*ef->resInA))) <<std::endl; 
+        fw.close();
+    }
+    else std::cout << "Problem with opening file";
 
 	debugPlotTracking();
 
